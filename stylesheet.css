@@ -1,0 +1,123 @@
+.header {
+    background-image: url(Images/background.jpg);
+    text-align: center;
+    padding: 10px;
+}
+.header h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: MediumAquamarine;
+}
+
+a:visited {
+    color: LightSlateGray;
+}
+
+a:hover {
+    color: Magenta;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.navigation li{
+    list-style: none;
+}
+.navigation a {
+    padding: 10px 15px;
+}
+
+.navigation a:hover {
+    font-weight: bold;
+}
+
+body {
+    padding: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+p {
+    text-align: center;
+    padding: 40px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+}
+
+.facts {
+    background-image: url(Images/car.jpg);
+    background-size: 400px;
+    padding: 10px;
+}
+
+.favorites {
+    background-image: url(Images/music.jpg);
+    background-size: 400px;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    background-image: url(Images/confetti.jpg);
+    background-size: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:600px){
+    .header h1 {
+        font-size: 60px;
+    }
+    
+    .navigation li {
+        display: inline;
+    }
+
+    .navigation a:hover {
+        background-color:white;
+        border-radius: 5px;
+    }
+
+    .about {
+        display: flex;
+
+    }
+
+    .facts {
+        display: flex;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .favorites {
+        display: flex;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+}
